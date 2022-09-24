@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import './App.css';
-import Card from 'react-bootstrap/Card';
-class App extends React.Component {
+
+class Users extends React.Component {
 
 	
 	constructor(props) {
@@ -31,24 +31,17 @@ class App extends React.Component {
 
 		return (
 		<div className = "App">
-			<h1> Fetch data from quotes api in react... </h1> {
+			<h1> Fetch data from an api in react </h1> {
 				items.map((item) => (
-						 <Card>
-							<Card.Img variant="top" src="G:\ETP\day22\api-task\src\api.png" alt="img" />
-							<Card.Title><h4>Text: { item.text },</h4></Card.Title>
-							<Card.Text>Author: { item.author },</Card.Text>
-							<br />
-						</Card>
-						
-				    ))
-				
-				
-			    }
-		    </div>
-	    );
-    }
+				<h4>
+					Text: { item.text },
+					Author: { item.author },
+				</h4>
+				))
+			}
+		</div>
+	);
+}
 }
 
-    
-
-export default App;
+export default Users;
