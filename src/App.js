@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
 import Card from 'react-bootstrap/Card';
+
 class App extends React.Component {
 
 	
@@ -34,7 +35,7 @@ class App extends React.Component {
 			<h1> Fetch data from quotes api in react... </h1> {
 				items.map((item) => (
 						 <Card>
-							<Card.Img variant="top" src="G:\ETP\day22\api-task\src\api.png" alt="img" />
+							<Card.Img variant="top" width={100} src="https://www.freeiconspng.com/thumbs/book-png/book-png-17.jpg" alt="img" />
 							<Card.Title><h4>Text: { item.text },</h4></Card.Title>
 							<Card.Text>Author: { item.author },</Card.Text>
 							<br />
